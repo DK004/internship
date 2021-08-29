@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-brand{
+    font-size: 2.25rem !important;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: space-evenly;
+}
+
+.jumbotron{
+    background-image: url(https://st2.depositphotos.com/1062624/8611/i/950/depositphotos_86117514-stock-photo-best-internet-concept-of-global.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 0;
+}
+
+.jumbotron .container h1{
+padding: 175px 0px 100px;
+font-weight: 500;
+}
+
+#form{
+justify-content: center;
+}
+
+
+
+.courses{
+    margin:  50px;
+    padding: px 25px;
+    background-color: lightgray;
+}
+
+
+
+
+.homecard{
+    margin: 0px auto ;
+}
+
+.homecard .card-img-top{
+    height: 175px ;
+}
+
+.homecard .card-body{
+    background-color: lightgray;
+}
+.homecard .card-text{
+    color: rgb(202, 28, 28);
+}
+.homecard .card-body:hover{
+    background-color: #d82a4e;
+    color: white !important;
+}
+
+.footer{
+    overflow: hidden;
+}
+
+/* button color */
+
+.btn{
+    background-color:#d82a4e;
+    color: white;
+}
+
+
+.search{
+    padding: 50px;
+    background-color: #d82a4e;
+    color: white;
+}
+.search form{
+    background-color: white;
+    padding: 25px;
+}
+
+
+#codeSearch{
+    margin: -150px auto;
+    background: none;
+}
+
+.codeCard{
+margin: 15px;
+}
+.codeRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.social-links a{
+    margin: 0px 15px;
+}
