@@ -1,0 +1,48 @@
+
+
+.main{
+    height: 100vh;
+    overflow: hidden;
+}
+.main img{
+    position:fixed;
+    height: 150px;
+width: 150px;
+cursor: pointer;
+transition: 1s ease-in-out;
+}
+
+#morn{
+    top: 50%;
+    margin: 0 50px;
+}
+
+#eve{
+    top: 50%;
+    right: 50px;
+}
+
+#noon{
+    top: 50px;
+    left: 45%;
+}
+
+.main img:hover{
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+}
+.gallery .row{
+    overflow: hidden;
+}
+.gallery img{
+    overflow: hidden;
+    height: 300px;
+    padding: 0;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    /* overflow: hidden; */
+}
+.gallery img:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}

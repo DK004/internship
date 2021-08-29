@@ -1,0 +1,31 @@
+#section4 hr{
+    background-color: white;
+}
+
+
+.thumbnail{
+border: 0.5px solid rgb(212, 208, 208);
+margin: 10px;
+}
+
+.thumbnail:hover{
+    transform: scale(0.89);
+}
+
+
+
+#commentForm{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin: 50px 250px;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#commentForm p{
+    margin: 30px 0;
+}
+
+
+.form2{
+    margin-top: 10% !important;
+}
