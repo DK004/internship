@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>opexx</title>
+  </head>
+  <body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <!-- <a class="navbar-brand" href="#">OPEXX</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"> OPEXX<span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="search.html"> SEARCH<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pricing.html">PRICING</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <section class="search pt-2 pb-5 px-5 text-center" style="background-color: rgb(93, 188, 210);">
+<div class="link mb-3" >
+    <a href="#" id="tenderbtn">Live Tenders</a> &nbsp;
+    <a href="#2" id="winnersbtn">Winners</a>
+</div>
+
+
+<div class="form container" id="liveTenders" >
+<!-- <div class="col-6">
+
+</div>
+<div class="col-4">
+
+
+</div>     -->
+
+
+<form>
+    <div class="row">
+        <div class="form-group col-8">
+            <input type="text" class="form-control" placeholder="Keyword">
+        </div>
+        <div class="form-group col-4">
+            <input type="text" class="form-control" placeholder="Location">
+        </div>
+    </div>
+
+    <div id="show_hide1" class="collapse collapse" >
+        <div>
+            <div class="row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Min Value">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Max Value">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Buyer Name">
+                </div>
+                <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="CPV">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <select class="form-control">
+                        <option disabled="" selected="">Published</option>
+                        <option>Any Time</option>
+                        <option>Today</option>
+                        <option>Within Last 7 Days</option>
+                        <option>Within Last 30 Days</option>
+                        <option>Custom Range</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <select class="form-control">
+                        <option disabled="" selected="">Deadline</option>
+                        <option>Any Time</option>
+                        <option>In The Future</option>
+                        <option>Within 7 Days</option>
+                        <option>Within 30 Days</option>
+                        <option>Within a year</option>
+                        <option>Custom Range</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a data-toggle="collapse" href="#show_hide1" class="" aria-expanded="true">Show More/Less</a>
+
+</form>
+
+
+</div>
+
+<div class="container" id="winners">
+    <p style="color: white">Winner and award information allow you to analyze previously awarded contracts. Start your free<br>
+        14-day trial now to see which companies have won tenders and which organizations have issued<br>
+        tenders before.</p>
+
+        <br>
+        <div class="container row">
+            <div class="col">
+                <a class="btn btn-success btn-block" href="#"><span style="color: white;width:100%;">START FREE TRAIL</span></a>
+            </div>
+            <div class="col">
+                <a class="btn btn-light btn-block" href="#"><span style="color: blue">Login</span></a>
+            </div>
+        </div>
+</div>
+
+      </section>
+
+
+
+
+
+
+<section class="something container text-center my-5">
+    <h1 class="display-3 mb-5">
+        9,000,000 tenders at your fingertips.
+    </h1>
+
+    <h4 class="h3 mb-4" style="color: blue;">
+        Start free trial for 14 days. No credit card needed.
+    </h4>
+
+    <a href="#3" class="btn btn-success">START FREE TRIAL</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+          let winnersbtn = document.getElementById('winnersbtn')
+          let tenderbtn = document.getElementById('tenderbtn')
+          let winners = document.getElementById('winners')
+          let tenders = document.getElementById('liveTenders')
+
+          winnersbtn.addEventListener('click', function(){
+            tenders.style.display ='none';
+            winners.style.display = 'block';
+          });
+
+          tenderbtn.addEventListener('click', function(){
+              tenders.style.display='block';
+              winners.style.display='none';
+          });
+      </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
